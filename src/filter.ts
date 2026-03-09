@@ -41,7 +41,7 @@ export async function filterArticles(
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-8b" });
+  const model = genAI.getGenerativeModel({ model: "gemma-3-27b-it" });
 
   // Process in batches to avoid token limits
   const batchSize = 20;
